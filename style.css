@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  color: #18a0fb;
+}
+
+.top-header-img {
+  width: 450px;
+  height: 250px;
+}
+
+.navigation ul {
+  display: flex;
+  list-style-type: none;
+  margin-right: 2rem;
+  margin-top: 1rem;
+}
+
+.nav-link {
+  margin-right: 1.5rem;
+  color: #18a0fb;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-link:after {
+  display: block;
+  content: '';
+  height: 2.5px;
+  width: 0;
+  margin: auto;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+.nav-link:hover:after {
+  background-color: #18a0fb;
+  width: 100%;
+}
+
+.main-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cta-section {
+  margin-left: 2.5rem;
+  margin-top: 1rem;
+}
+.cta-primary-header {
+  font-size: 4em;
+}
+
+.cta-secondary-header {
+  font-size: 2.5em;
+  font-weight: 300;
+}
+.cta-primary-header-blue {
+  color: #18a0fb;
+}
+
+.cta-primary-header-color2 {
+  color: #49569a;
+}
+
+.cta-primary-header-color3 {
+  color: #fc7cad;
+}
+
+.cta-button {
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: #18a0fb;
+  color: #fff;
+  border-color: #18a0fb;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 24px;
+  margin-top: 1em;
+  line-height: 33px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+.cta-button:hover {
+  background-color: #0c5cd0;
+  border-color: #0c5cd0;
+}
+.cta-img {
+  width: 600px;
+  height: 450px;
+  margin-top: -4em;
+}
