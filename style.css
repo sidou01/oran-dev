@@ -52,7 +52,7 @@ a {
   width: 100%;
 }
 
-.main-section {
+#main-section {
   display: flex;
   justify-content: space-between;
 }
@@ -87,6 +87,7 @@ a {
   background-color: #18a0fb;
   color: #fff;
   border-color: #18a0fb;
+  font-weight: 500;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   padding-left: 1.5rem;
@@ -94,7 +95,6 @@ a {
   font-size: 24px;
   margin-top: 1em;
   line-height: 33px;
-  font-family: 'Nunito Sans', sans-serif;
 }
 .cta-button:hover {
   background-color: #0c5cd0;
@@ -104,4 +104,73 @@ a {
   width: 600px;
   height: 450px;
   margin-top: -4em;
+}
+
+#services-section {
+  margin-top: 4rem;
+}
+h1 {
+  font-weight: 300;
+  font-size: 2.5em;
+}
+.services-main-header {
+  text-align: center;
+  width: 300px;
+}
+.services-main-header:after {
+  display: block;
+  content: '';
+  height: 2.5px;
+  width: 0;
+  margin: auto;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+.services-main-header:hover:after {
+  background-color: #18a0fb;
+  width: 100%;
+}
+
+.service {
+  display: flex;
+  justify-content: space-around;
+}
+.services-main-header {
+  margin: auto;
+}
+
+.service-left {
+  margin-top: 3.5em;
+  margin-left: 2.5em;
+  width: 600px;
+}
+
+.service-header {
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  border-color: red;
+  border-bottom: 1px solid #e8e7e7;
+  border-bottom-width: 1px;
+}
+
+.first-service-img {
+  height: 500px;
+  margin-right: 0.5rem;
+}
+
+.services-button {
+  margin-right: 0;
+  width: 150px;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  text-transform: uppercase;
+  border-radius: 6px;
+  border-color: #156fd7;
+  background-color: #156fd7;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 70%;
+  letter-spacing: 0.75px;
 }
