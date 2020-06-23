@@ -161,7 +161,9 @@ h1 {
 .service {
   display: flex;
   justify-content: space-around;
+  position: relative;
 }
+
 .services-main-header {
   margin: auto;
 }
@@ -172,12 +174,22 @@ h1 {
   width: 600px;
 }
 
+.design-service-side-img {
+  position: absolute;
+  left: 0;
+  height: 550px;
+  bottom: 210px;
+  z-index: -1;
+}
+
 .service-header {
   margin-bottom: 1.5rem;
   line-height: 1.5;
-  border-color: red;
-  border-bottom: 1px solid #e8e7e7;
-  border-bottom-width: 1px;
+  /* border: 1px solid #e8e7e7; */
+}
+
+.design-service {
+  background: url('https://res.cloudinary.com/dxm0sdgpv/image/upload/v1592944247/orandevsolutions/grey-bg_sgl9mn.png');
 }
 
 .mobile-service-img {
