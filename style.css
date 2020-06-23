@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 * {
   margin: 0;
@@ -8,6 +9,20 @@
 
 body {
   font-family: 'Nunito Sans', sans-serif;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+h3 {
+  font-size: 1.17em;
+  font-weight: bold;
 }
 
 .top-header {
@@ -60,6 +75,7 @@ a {
 .cta-section {
   margin-left: 2.5rem;
   margin-top: 1rem;
+  width: 49%;
 }
 .cta-primary-header {
   font-size: 4em;
@@ -69,8 +85,12 @@ a {
   font-size: 2.5em;
   font-weight: 300;
 }
-.cta-primary-header-blue {
+.cta-text-blue {
   color: #18a0fb;
+}
+
+.text-red {
+  color: #fb0563;
 }
 
 .cta-primary-header-color2 {
@@ -84,7 +104,7 @@ a {
 .cta-button {
   cursor: pointer;
   border-radius: 6px;
-  background-color: #18a0fb;
+  background-color: #156fd7;
   color: #fff;
   border-color: #156fd7;
   font-weight: 500;
@@ -93,7 +113,7 @@ a {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   font-size: 24px;
-  margin-top: 1em;
+  margin-top: 2em;
   line-height: 33px;
 }
 .cta-button:hover {
@@ -103,11 +123,11 @@ a {
 .cta-img {
   width: 600px;
   height: 450px;
-  margin-top: -4em;
+  margin-top: -5.5em;
 }
 
 #services-section {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 h1 {
   font-weight: 300;
@@ -116,20 +136,26 @@ h1 {
 .services-main-header {
   text-align: center;
   width: 300px;
+  cursor: pointer;
 }
+
 .services-main-header:after {
   display: block;
   content: '';
-  height: 2.5px;
-  width: 0;
+  height: 2px;
+  width: 95%;
   margin: auto;
-  background: transparent;
-  transition: width 0.5s ease, background-color 0.5s ease;
+  background-color: #18a0fb;
+  transition: width 0.5s ease, background 0.5s ease;
 }
 
 .services-main-header:hover:after {
-  background-color: #18a0fb;
-  width: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 40%,
+    rgba(24, 160, 251, 1) 100%
+  );
+  width: -20%;
 }
 
 .service {
@@ -142,7 +168,7 @@ h1 {
 
 .service-left {
   margin-top: 3.5em;
-  margin-left: 2.5em;
+  margin-left: 3.5em;
   width: 600px;
 }
 
@@ -154,28 +180,80 @@ h1 {
   border-bottom-width: 1px;
 }
 
-.first-service-img {
+.mobile-service-img {
+  height: 450px;
+}
+
+.web-service-img {
+  margin-right: 2rem;
+  height: 380px;
+  margin-top: 2rem;
+}
+
+.design-service-img {
   height: 500px;
-  margin-right: 0.5rem;
+  margin-top: 4rem;
 }
 
 .services-button {
-  margin-right: 0;
-  width: 150px;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  text-transform: uppercase;
-  border-radius: 6px;
-  border-color: #156fd7;
-  background-color: #156fd7;
-  color: #fff;
-  font-weight: 600;
-  cursor: pointer;
   margin-left: 70%;
-  letter-spacing: 0.75px;
 }
 
 .services-button:hover {
   background-color: #0c5cd0;
   border-color: #0c5cd0;
+}
+
+footer {
+  background: url('https://res.cloudinary.com/dxm0sdgpv/image/upload/v1592851309/footer-bg_b1smi8.png');
+  color: #fff;
+}
+
+footer h1 {
+  margin-top: -0.7rem;
+}
+footer button {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  height: 40px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-around;
+  /*margin-left: 30%; */
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  background-color: rgba(14, 31, 51, 0.5);
+}
+
+.footer-bottom p {
+  font-weight: 500;
+}
+
+.right-most-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fb-icon {
+  content: url('https://res.cloudinary.com/dxm0sdgpv/image/upload/v1592928993/orandevsolutions/icons/fb_ksnwcc.png');
+  height: 20px;
+}
+
+.gmail-icon {
+  content: url('https://res.cloudinary.com/dxm0sdgpv/image/upload/v1592928993/orandevsolutions/icons/gmail_usmazu.png');
+  height: 20px;
+}
+
+.behance-icon {
+  content: url('https://res.cloudinary.com/dxm0sdgpv/image/upload/v1592940128/orandevsolutions/icons/behance_gyrckp.png');
+  height: 22px;
 }
