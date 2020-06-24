@@ -3,20 +3,39 @@
 $(document).ready(function() {
   $('.services-main-header').hover(
     function() {
-      $('.text-blue').css('color', 'black');
+      $('.services-text-blue').css('color', 'black');
     },
     function() {
-      $('.text-blue').css('color', '#18A0FB');
+      $('.services-text-blue').css('color', '#18A0FB');
     },
   );
   $('.services-main-header').hover(
     function() {
       $('.services-header-blue-hover').css('color', '#18A0FB');
-    },
+    },  
     function() {
       $('.services-header-blue-hover').css('color', 'black');
     },
   );
+
+  $('.tech-stack-header').hover(
+    function() {
+      $('.tech-stack-text-blue').css('color', 'black');
+    },
+    function() {
+      $('.tech-stack-text-blue').css('color', '#18A0FB');
+    },
+  );
+  $('.tech-stack-header').hover(
+    function() {
+      $('.tech-stack-blue-hover').css('color', '#18A0FB');
+    },
+    function() {
+      $('.tech-stack-blue-hover').css('color', 'black');
+    },
+  );
+
+  
 });
 
 const options = {
