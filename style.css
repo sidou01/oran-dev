@@ -184,9 +184,10 @@ h1 {
 
 .design-service-grey-bg {
     position: absolute;
-    width: 100%;
-    bottom: -22%;
+    width: 39%;
+    bottom: -2%;
     z-index: -1;
+    right: 0;
 
 }
 
@@ -199,6 +200,7 @@ h1 {
   z-index: -1;
   width: 13%;
 }
+
 
 
 
@@ -237,6 +239,18 @@ h1 {
   background-color: #0c5cd0;
   border-color: #0c5cd0;
 }
+
+.tech-stack-section {
+    margin-top: 10rem;
+}
+.tech-stack-header {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
 
 footer {
   background: url('https://res.cloudinary.com/dxm0sdgpv/image/upload/v1592851309/footer-bg_b1smi8.png');
