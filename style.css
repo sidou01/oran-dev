@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 
 * {
   margin: 0;
@@ -8,11 +8,11 @@
 }
 
 body {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
 
@@ -54,7 +54,7 @@ a {
 
 .nav-link:after {
   display: block;
-  content: '';
+  content: "";
   height: 2.5px;
   width: 0;
   margin: auto;
@@ -90,12 +90,11 @@ a {
 }
 
 .services-text-blue {
-    color: #18a0fb;
+  color: #18a0fb;
 }
 
-
 .tech-stack-text-blue {
-    color: #18a0fb;
+  color: #18a0fb;
 }
 .text-red {
   color: #fb0563;
@@ -143,30 +142,28 @@ h1 {
 }
 
 .tech-stack-heading {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space- ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-;
 }
 
 .tech-stack-sub-header {
-    text-align: center;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
-    font-weight: 400;
-
+  text-align: center;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  font-weight: 400;
 }
 .tech-stack-text-blue {
-    color: #18a0fb;
+  color: #18a0fb;
 }
 .tech-stack-header {
-  
   cursor: pointer;
 }
 
 .tech-stack-header:after {
   display: block;
-  content: '';
+  content: "";
   height: 2px;
   width: 95%;
   margin: auto;
@@ -208,12 +205,11 @@ h1 {
 }
 
 .design-service-grey-bg {
-    position: absolute;
-    width: 39%;
-    bottom: -9%;
-    z-index: -1;
-    right: 0;
-
+  position: absolute;
+  width: 39%;
+  bottom: -9%;
+  z-index: -1;
+  right: 0;
 }
 
 .design-service-side-img {
@@ -226,9 +222,6 @@ h1 {
   width: 13%;
 }
 
-
-
-
 .service-header {
   margin-bottom: 1.5rem;
   line-height: 1.5;
@@ -236,7 +229,7 @@ h1 {
 }
 
 .design-service {
-  background: url('https://res.cloudinary.com/dxm0sdgpv/image/upload/v1592944247/orandevsolutions/grey-bg_sgl9mn.png');
+  background: url("https://res.cloudinary.com/dxm0sdgpv/image/upload/v1592944247/orandevsolutions/grey-bg_sgl9mn.png");
 }
 
 .mobile-service-img {
@@ -266,7 +259,6 @@ h1 {
 }
 
 .tech-stack-section {
-    
 }
 
 .services-main-header {
@@ -277,7 +269,7 @@ h1 {
 
 .services-main-header:after {
   display: block;
-  content: '';
+  content: "";
   height: 2px;
   width: 95%;
   margin: auto;
@@ -294,12 +286,60 @@ h1 {
   width: -20%;
 }
 
+.tech-slider {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
 
+.slider-container {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.slider-content-wrapper {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: slide 100s linear infinite;
+}
 
+.slider-content-wrapper > div {
+  display: inline-block;
+}
 
+@keyframes slide {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.tech-logo-container {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.tech-logo-container > div {
+  display: inline-block;
+  padding: 0 2.2rem;
+  vertical-align: middle;
+  opacity: 0.25;
+  outline: none;
+  cursor: default;
+  transition: opacity 0.2s ease;
+}
+
+.tech-logo-container > div:hover {
+  opacity: 0.8;
+}
+
+.tech-logo-container div svg {
+  height: 58px;
+}
 
 footer {
-  background: url('https://res.cloudinary.com/dxm0sdgpv/image/upload/v1592851309/footer-bg_b1smi8.png');
+  background: url("https://res.cloudinary.com/dxm0sdgpv/image/upload/v1592851309/footer-bg_b1smi8.png");
   color: #fff;
 }
 
@@ -343,16 +383,16 @@ footer .container {
 }
 
 .fb-icon {
-  content: url('https://res.cloudinary.com/dxm0sdgpv/image/upload/v1592928993/orandevsolutions/icons/fb_ksnwcc.png');
+  content: url("https://res.cloudinary.com/dxm0sdgpv/image/upload/v1592928993/orandevsolutions/icons/fb_ksnwcc.png");
   height: 20px;
 }
 
 .gmail-icon {
-  content: url('https://res.cloudinary.com/dxm0sdgpv/image/upload/v1592928993/orandevsolutions/icons/gmail_usmazu.png');
+  content: url("https://res.cloudinary.com/dxm0sdgpv/image/upload/v1592928993/orandevsolutions/icons/gmail_usmazu.png");
   height: 20px;
 }
 
 .behance-icon {
-  content: url('https://res.cloudinary.com/dxm0sdgpv/image/upload/v1592940128/orandevsolutions/icons/behance_gyrckp.png');
+  content: url("https://res.cloudinary.com/dxm0sdgpv/image/upload/v1592940128/orandevsolutions/icons/behance_gyrckp.png");
   height: 22px;
 }
