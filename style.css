@@ -185,9 +185,11 @@ h1 {
 .design-service-side-img {
   position: absolute;
   left: 0;
-  height: 550px;
-  bottom: 36%;
+  /*height: 550px; */
   z-index: -1;
+  bottom: 9em;
+  z-index: -1;
+  width: 13%;
 }
 
 .service-header {
