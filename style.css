@@ -172,13 +172,21 @@ h1 {
   margin-top: 3.5em;
   margin-left: 3.5em;
   width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-tags {
+  margin-left: -5%;
+  width: 55%;
+  display: inline-block;
 }
 
 .design-service-side-img {
   position: absolute;
   left: 0;
   height: 550px;
-  bottom: 210px;
+  bottom: 36%;
   z-index: -1;
 }
 
@@ -208,7 +216,9 @@ h1 {
 }
 
 .services-button {
+  width: 130px;
   margin-left: 70%;
+  margin-top: -8%;
 }
 
 .services-button:hover {
@@ -223,6 +233,9 @@ footer {
 
 footer h1 {
   margin-top: -0.7rem;
+}
+footer h2 {
+  font-weight: 400;
 }
 footer button {
   padding-top: 0.5rem;
