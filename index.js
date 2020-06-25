@@ -1,41 +1,56 @@
 /* deps: tailwindcss, typed, jquery */
 
-$(document).ready(function() {
-  $('.services-main-header').hover(
-    function() {
-      $('.services-text-blue').css('color', 'black');
+$(document).ready(function () {
+  $(".services-main-header").hover(
+    function () {
+      $(".services-text-blue").css("color", "black");
     },
-    function() {
-      $('.services-text-blue').css('color', '#18A0FB');
-    },
+    function () {
+      $(".services-text-blue").css("color", "#18A0FB");
+    }
   );
-  $('.services-main-header').hover(
-    function() {
-      $('.services-header-blue-hover').css('color', '#18A0FB');
-    },  
-    function() {
-      $('.services-header-blue-hover').css('color', 'black');
+  $(".services-main-header").hover(
+    function () {
+      $(".services-header-blue-hover").css("color", "#18A0FB");
     },
-  );
-
-  $('.tech-stack-header').hover(
-    function() {
-      $('.tech-stack-text-blue').css('color', 'black');
-    },
-    function() {
-      $('.tech-stack-text-blue').css('color', '#18A0FB');
-    },
-  );
-  $('.tech-stack-header').hover(
-    function() {
-      $('.tech-stack-blue-hover').css('color', '#18A0FB');
-    },
-    function() {
-      $('.tech-stack-blue-hover').css('color', 'black');
-    },
+    function () {
+      $(".services-header-blue-hover").css("color", "black");
+    }
   );
 
-  
+  $(".tech-stack-header").hover(
+    function () {
+      $(".tech-stack-text-blue").css("color", "black");
+    },
+    function () {
+      $(".tech-stack-text-blue").css("color", "#18A0FB");
+    }
+  );
+  $(".tech-stack-header").hover(
+    function () {
+      $(".tech-stack-blue-hover").css("color", "#18A0FB");
+    },
+    function () {
+      $(".tech-stack-blue-hover").css("color", "black");
+    }
+  );
+
+  $(".our-team-header").hover(
+    function () {
+      $(".our-team-text-blue").css("color", "black");
+    },
+    function () {
+      $(".our-team-text-blue").css("color", "#18A0FB");
+    }
+  );
+  $(".our-team-header").hover(
+    function () {
+      $(".our-team-blue-hover").css("color", "#18A0FB");
+    },
+    function () {
+      $(".our-team-blue-hover").css("color", "black");
+    }
+  );
 });
 
 const options = {
@@ -51,4 +66,4 @@ const options = {
   startDelay: 1000,
 };
 
-var typed = new Typed('.cta-primary-header', options);
+var typed = new Typed(".cta-primary-header", options);
