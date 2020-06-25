@@ -299,7 +299,7 @@ h1 {
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
-  animation: slide 100s linear infinite;
+  animation: slide 80s linear infinite;
 }
 
 .slider-content-wrapper > div {
@@ -331,7 +331,7 @@ h1 {
 }
 
 .tech-logo-container > div:hover {
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .tech-logo-container div svg {
