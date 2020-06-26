@@ -408,10 +408,11 @@ h1 {
   align-items: center;
   justify-content: center;
   transition: 0.3s;
-
+  background: url("https://res.cloudinary.com/dxm0sdgpv/image/upload/v1592851309/footer-bg_b1smi8.png");
   box-shadow: 0 0 10px -5px #333;
   border-radius: 3px;
   opacity: 0.3;
+  color: #fff;
 }
 
 .card img {
@@ -434,7 +435,7 @@ h1 {
 }
 .card .profession {
   font-size: 12.5px;
-  color: #333;
+  color: #ccc;
   padding-top: 2px;
   font-weight: 700;
 }
