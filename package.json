@@ -1,0 +1,17 @@
+{
+    "name": "oran-dev",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/sidou01/oran-dev.git",
+    "author": "Sidou <sidou@sidou.codes>",
+    "license": "MIT",
+    "scripts": {
+        "develop": "gatsby develop"
+    },
+    "dependencies": {
+        "@emotion/core": "^10.0.28",
+        "gatsby": "^2.23.11",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1"
+    }
+}
