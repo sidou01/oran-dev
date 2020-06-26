@@ -180,6 +180,10 @@ h1 {
   width: -20%;
 }
 
+.our-team-section {
+  padding-bottom: 5rem;
+}
+
 .our-team-heading {
   display: flex;
   flex-direction: column;
@@ -385,9 +389,101 @@ h1 {
   height: 58px;
 }
 
+.our-team-cards {
+}
+
+.our-team-cards .container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+}
+
+.card {
+  margin-left: 2rem;
+  padding-top: 2rem;
+  width: 25%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+
+  box-shadow: 0 0 10px -5px #333;
+  border-radius: 3px;
+  opacity: 0.3;
+}
+
+.card img {
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin-bottom: 0.5rem;
+  transition: 0.3s;
+}
+
+.card img:hover {
+  border-color: #18a0fb;
+  transform: scale(1.1);
+}
+.card-inactive img {
+  border-radius: 50%;
+}
+.card .profession {
+  font-size: 12.5px;
+  color: #333;
+  padding-top: 2px;
+  font-weight: 700;
+}
+
+.card-paragraph {
+  font-size: 11.5px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+.active {
+  opacity: 1;
+}
+/* no hover for this */
+.card-inactive {
+  margin-left: 2rem;
+  padding-top: 2rem;
+  width: 25%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+
+  box-shadow: 0 0 25px -5px #333;
+  border-radius: 3px;
+  opacity: 0.3;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px -5px #333;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+}
 footer {
   background: url("https://res.cloudinary.com/dxm0sdgpv/image/upload/v1592851309/footer-bg_b1smi8.png");
   color: #fff;
+  position: relative;
+}
+
+footer img {
+  right: 0;
+  bottom: 100%;
+  position: absolute;
+  height: 21rem;
+  z-index: -1;
 }
 
 footer h1 {
