@@ -442,9 +442,10 @@ h1 {
 .card-paragraph {
   font-size: 11.5px;
   padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
+  border-bottom: 0.5px solid #ccc;
 }
 .active {
   opacity: 1;
@@ -474,29 +475,32 @@ h1 {
 .social-links {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
-.social-links a {
-  margin-left: 1.5rem;
+.social-links:first-child {
+  margin-left: 0;
 }
+
 .icon-fb {
-  height: 25px;
-  width: 25px;
+  font-size: 1.7rem;
   opacity: 0.7;
   transition: 0.3s;
+  margin-left: 0;
 }
 
 .icon-fb:hover {
+  color: #156fd7;
   opacity: 1;
   transform: scale(1.1);
 }
 
 .icon-git {
-  height: 25px;
-  width: 25px;
+  height: 27px;
+  width: 27px;
   opacity: 0.7;
   transition: 0.3s;
+  margin-top: 2px;
 }
 
 .icon-git:hover {
