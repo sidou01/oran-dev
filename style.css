@@ -461,7 +461,8 @@ h1 {
   align-items: center;
   justify-content: center;
   transition: 0.3s;
-
+  background: url("https://res.cloudinary.com/dxm0sdgpv/image/upload/v1592851309/footer-bg_b1smi8.png");
+  color: #fff;
   box-shadow: 0 0 25px -5px #333;
   border-radius: 3px;
   opacity: 0.3;
