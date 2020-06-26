@@ -420,11 +420,14 @@ h1 {
   padding: 5px;
   margin-bottom: 0.5rem;
   transition: 0.3s;
+  opacity: 0.9;
+  height: 135px;
 }
 
 .card img:hover {
   border-color: #18a0fb;
   transform: scale(1.1);
+  opacity: 1;
 }
 .card-inactive img {
   border-radius: 50%;
@@ -470,8 +473,37 @@ h1 {
 
 .social-links {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 1rem;
 }
+
+.social-links a {
+  margin-left: 1.5rem;
+}
+.icon-fb {
+  height: 25px;
+  width: 25px;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.icon-fb:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.icon-git {
+  height: 25px;
+  width: 25px;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.icon-git:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
 footer {
   background: url("https://res.cloudinary.com/dxm0sdgpv/image/upload/v1592851309/footer-bg_b1smi8.png");
   color: #fff;
@@ -523,19 +555,4 @@ footer .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.fb-icon {
-  content: url("https://res.cloudinary.com/dxm0sdgpv/image/upload/v1592928993/orandevsolutions/icons/fb_ksnwcc.png");
-  height: 20px;
-}
-
-.gmail-icon {
-  content: url("https://res.cloudinary.com/dxm0sdgpv/image/upload/v1592928993/orandevsolutions/icons/gmail_usmazu.png");
-  height: 20px;
-}
-
-.behance-icon {
-  content: url("https://res.cloudinary.com/dxm0sdgpv/image/upload/v1592940128/orandevsolutions/icons/behance_gyrckp.png");
-  height: 22px;
 }
