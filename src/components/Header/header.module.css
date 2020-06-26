@@ -1,0 +1,48 @@
+
+.main_section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cta_section {
+  margin-left: 2.5rem;
+  margin-top: 1rem;
+  width: 49%;
+}
+.cta_primary_header {
+  font-size: 4em;
+}
+
+.cta_secondary_header {
+  font-size: 2.5em;
+  font-weight: 300;
+}
+.cta_text_blue {
+  color: #18a0fb;
+}
+
+.cta_button {
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: #156fd7;
+  color: #fff;
+  border-color: #156fd7;
+  font-weight: 500;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 24px;
+  margin-top: 2em;
+  line-height: 33px;
+}
+
+.cta_button:hover {
+  background-color: #0c5cd0;
+  border-color: #0c5cd0;
+}
+.cta_img {
+  width: 600px;
+  height: 450px;
+  margin-top: -5.5em;
+}
