@@ -417,7 +417,7 @@ h1 {
 .card img {
   border-radius: 50%;
   border: 1px solid #ccc;
-  padding: 5px;
+  padding: 3px;
   margin-bottom: 0.5rem;
   transition: 0.3s;
   opacity: 0.9;
@@ -425,7 +425,7 @@ h1 {
 }
 
 .card img:hover {
-  border-color: #18a0fb;
+  border: 1.5px solid #18a0fb;
   transform: scale(1.1);
   opacity: 1;
 }
