@@ -16,6 +16,34 @@
   </head>
 
   <body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml: true,
+          version: 'v7.0',
+        });
+      };
+
+      (function(d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, 'script', 'facebook-jssdk');
+    </script>
+
+    <!-- Your Chat Plugin code -->
+    <div
+      class="fb-customerchat"
+      attribution="setup_tool"
+      page_id="100273145059311"
+      theme_color="#18a0fb"
+    ></div>
     <header class="top-header">
       <img
         class="top-header-img"
@@ -1467,29 +1495,5 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="index.js"></script>
-
-    <script type="text/javascript">
-      (function(I, _, T, i, c, k, s) {
-        if (I.iticks) return;
-        I.iticks = { host: c, settings: s, clientId: k, cdn: _, queue: [] };
-        var h = T.head || T.documentElement;
-        var e = T.createElement(i);
-        var l = I.location;
-        e.async = true;
-        e.src = (_ || c) + '/client/inject-v2.min.js';
-        h.insertBefore(e, h.firstChild);
-        I.iticks.call = function(a, b) {
-          I.iticks.queue.push([a, b]);
-        };
-      })(
-        window,
-        'https://cdn.intelliticks.com/prod/common',
-        document,
-        'script',
-        'https://app.intelliticks.com',
-        'Xd6u7qa6xqDsDGHGk_c',
-        {},
-      );
-    </script>
   </body>
 </html>
