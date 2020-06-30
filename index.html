@@ -2,15 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=" />
-    <link
-      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/429563c6cf.js"
-      crossorigin="anonymous"
-    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/429563c6cf.js" crossorigin="anonymous"></script>
     <link type="text/css" rel="stylesheet" href="style.css" />
     <title>Oran Dev Solutions</title>
   </head>
@@ -19,14 +13,14 @@
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
     <script>
-      window.fbAsyncInit = function() {
+      window.fbAsyncInit = function () {
         FB.init({
           xfbml: true,
           version: 'v7.0',
         });
       };
 
-      (function(d, s, id) {
+      (function (d, s, id) {
         var js,
           fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
@@ -52,16 +46,16 @@
       />
       <nav class="navigation">
         <ul>
-          <a href="" class="nav-link">
+          <a href="#services-section" class="nav-link">
             <li>Services</li>
           </a>
-          <a href="" class="nav-link">
+          <a href="#tech-stack-section" class="nav-link">
+            <li>Tech Stack</li>
+          </a>
+          <a href="#our-team-section" class="nav-link">
             <li>Our Team</li>
           </a>
-          <a href="" class="nav-link">
-            <li>Sponsoring</li>
-          </a>
-          <a href="" class="nav-link">
+          <a href="#footer" class="nav-link">
             <li>Contact Us</li>
           </a>
         </ul>
@@ -70,8 +64,7 @@
     <section id="main-section">
       <div class="cta-section">
         <h1 class="cta-primary-header">
-          <span class="cta-text-blue">Oran</span
-          ><span class="cta-primary-header-color2"></span>Dev
+          <span class="cta-text-blue">Oran</span><span class="cta-primary-header-color2"></span>Dev
           <span class="cta-primary-header-color3">Solutions</span>
         </h1>
 
@@ -79,13 +72,10 @@
           meilleure qualité avec le meilleur prix
         </h4>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum
-          sequi suscipit eum placeat ratione deleniti dolores, dolorum quo
-          voluptatibus.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum sequi suscipit eum
+          placeat ratione deleniti dolores, dolorum quo voluptatibus.
         </p>
-        <button
-          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 my-4 rounded"
-        >
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 my-4 rounded">
           Contact US!
         </button>
       </div>
@@ -96,7 +86,11 @@
       />
     </section>
     <section id="services-section">
-      <h1 class="services-main-header">
+      <h1
+        class="services-main-header"
+        onmouseenter="changeColor(this)"
+        onmouseleave="resetColor(this)"
+      >
         <span class="services-text-blue">Services</span>
         <span class="services-header-blue-hover">Offerts</span>
       </h1>
@@ -104,15 +98,15 @@
         <div class="service-left">
           <h1 class="service-header">Application Mobile</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore mag sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore mag sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.
           </p>
           <br />
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore mag sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore mag sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.
           </p>
 
           <div class="px-6 py-4 service-tags">
@@ -124,8 +118,7 @@
               class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-700 mr-2"
               >Flutter</span
             >
-            <span
-              class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-700"
+            <span class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-700"
               >Java</span
             >
           </div>
@@ -142,10 +135,7 @@
         />
       </div>
 
-      <div
-        class="service"
-        style="background-color: #f8f8f8; z-index: -1; margin-top: 2rem;"
-      >
+      <div class="service" style="background-color: #f8f8f8; z-index: -1; margin-top: 2rem;">
         <img
           class="web-service-img"
           src="https://res.cloudinary.com/dxm0sdgpv/image/upload/v1592852216/web-service_s6uudd.png"
@@ -154,15 +144,15 @@
         <div class="service-left">
           <h1 class="service-header">Application Web</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore mag sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore mag sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.
           </p>
           <br />
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore mag sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore mag sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.
           </p>
           <div class="px-6 py-4 service-tags">
             <span
@@ -173,8 +163,7 @@
               class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-700 mr-2"
               >ReactJs</span
             >
-            <span
-              class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-700"
+            <span class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-700"
               >VueJs</span
             >
           </div>
@@ -199,15 +188,15 @@
           />
           <h1 class="service-header">Design et Prototyping</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore mag sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore mag sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.
           </p>
           <br />
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore mag sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore mag sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.
           </p>
           <div class="px-6 py-4 service-tags">
             <span
@@ -218,8 +207,7 @@
               class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-700 mr-2"
               >Adobe XD</span
             >
-            <span
-              class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-700"
+            <span class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-700"
               >Figma</span
             >
           </div>
@@ -236,20 +224,23 @@
         />
       </div>
     </section>
-    <section class="tech-stack-section">
+    <section id="tech-stack-section">
       <img
         class="left-img"
         src="https://res.cloudinary.com/dxm0sdgpv/image/upload/v1593101469/orandevsolutions/side-tech-stack_nrgimg.png"
       />
       <div class="tech-stack-heading">
-        <h1 class="tech-stack-header">
-          <span class="tech-stack-text-blue">Tech</span>
+        <h1
+          class="tech-stack-header"
+          onmouseenter="changeColor(this)"
+          onmouseleave="resetColor(this)"
+        >
+          <span class=tech-stack-text-blue">Tech</span>
           <span class="tech-stack-blue-hover">Stack</span>
         </h1>
         <p class="tech-stack-sub-header">
-          We use different technologies depending on the customer and our
-          personal recommendations.<br />Here are some of the technologies that
-          we can use in your app
+          We use different technologies depending on the customer and our personal
+          recommendations.<br />Here are some of the technologies that we can use in your app
         </p>
       </div>
       <div class="tech-slider">
@@ -308,10 +299,7 @@
                   </svg>
                 </div>
                 <div>
-                  <svg
-                    viewBox="175.7 78 490.6 436.9"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+                  <svg viewBox="175.7 78 490.6 436.9" xmlns="http://www.w3.org/2000/svg">
                     <g fill="#61dafb">
                       <path
                         d="m666.3 296.5c0-32.5-40.7-63.3-103.1-82.4 14.4-63.6 8-114.2-20.2-130.4-6.5-3.8-14.1-5.6-22.4-5.6v22.3c4.6 0 8.3.9 11.4 2.6 13.6 7.8 19.5 37.5 14.9 75.7-1.1 9.4-2.9 19.3-5.1 29.4-19.6-4.8-41-8.5-63.5-10.9-13.5-18.5-27.5-35.3-41.6-50 32.6-30.3 63.2-46.9 84-46.9v-22.3c-27.5 0-63.5 19.6-99.9 53.6-36.4-33.8-72.4-53.2-99.9-53.2v22.3c20.7 0 51.4 16.5 84 46.6-14 14.7-28 31.4-41.3 49.9-22.6 2.4-44 6.1-63.6 11-2.3-10-4-19.7-5.2-29-4.7-38.2 1.1-67.9 14.6-75.8 3-1.8 6.9-2.6 11.5-2.6v-22.3c-8.4 0-16 1.8-22.6 5.6-28.1 16.2-34.4 66.7-19.9 130.1-62.2 19.2-102.7 49.9-102.7 82.3 0 32.5 40.7 63.3 103.1 82.4-14.4 63.6-8 114.2 20.2 130.4 6.5 3.8 14.1 5.6 22.5 5.6 27.5 0 63.5-19.6 99.9-53.6 36.4 33.8 72.4 53.2 99.9 53.2 8.4 0 16-1.8 22.6-5.6 28.1-16.2 34.4-66.7 19.9-130.1 62-19.1 102.5-49.9 102.5-82.3zm-130.2-66.7c-3.7 12.9-8.3 26.2-13.5 39.5-4.1-8-8.4-16-13.1-24-4.6-8-9.5-15.8-14.4-23.4 14.2 2.1 27.9 4.7 41 7.9zm-45.8 106.5c-7.8 13.5-15.8 26.3-24.1 38.2-14.9 1.3-30 2-45.2 2-15.1 0-30.2-.7-45-1.9-8.3-11.9-16.4-24.6-24.2-38-7.6-13.1-14.5-26.4-20.8-39.8 6.2-13.4 13.2-26.8 20.7-39.9 7.8-13.5 15.8-26.3 24.1-38.2 14.9-1.3 30-2 45.2-2 15.1 0 30.2.7 45 1.9 8.3 11.9 16.4 24.6 24.2 38 7.6 13.1 14.5 26.4 20.8 39.8-6.3 13.4-13.2 26.8-20.7 39.9zm32.3-13c5.4 13.4 10 26.8 13.8 39.8-13.1 3.2-26.9 5.9-41.2 8 4.9-7.7 9.8-15.6 14.4-23.7 4.6-8 8.9-16.1 13-24.1zm-101.4 106.7c-9.3-9.6-18.6-20.3-27.8-32 9 .4 18.2.7 27.5.7 9.4 0 18.7-.2 27.8-.7-9 11.7-18.3 22.4-27.5 32zm-74.4-58.9c-14.2-2.1-27.9-4.7-41-7.9 3.7-12.9 8.3-26.2 13.5-39.5 4.1 8 8.4 16 13.1 24s9.5 15.8 14.4 23.4zm73.9-208.1c9.3 9.6 18.6 20.3 27.8 32-9-.4-18.2-.7-27.5-.7-9.4 0-18.7.2-27.8.7 9-11.7 18.3-22.4 27.5-32zm-74 58.9c-4.9 7.7-9.8 15.6-14.4 23.7-4.6 8-8.9 16-13 24-5.4-13.4-10-26.8-13.8-39.8 13.1-3.1 26.9-5.8 41.2-7.9zm-90.5 125.2c-35.4-15.1-58.3-34.9-58.3-50.6s22.9-35.6 58.3-50.6c8.6-3.7 18-7 27.7-10.1 5.7 19.6 13.2 40 22.5 60.9-9.2 20.8-16.6 41.1-22.2 60.6-9.9-3.1-19.3-6.5-28-10.2zm53.8 142.9c-13.6-7.8-19.5-37.5-14.9-75.7 1.1-9.4 2.9-19.3 5.1-29.4 19.6 4.8 41 8.5 63.5 10.9 13.5 18.5 27.5 35.3 41.6 50-32.6 30.3-63.2 46.9-84 46.9-4.5-.1-8.3-1-11.3-2.7zm237.2-76.2c4.7 38.2-1.1 67.9-14.6 75.8-3 1.8-6.9 2.6-11.5 2.6-20.7 0-51.4-16.5-84-46.6 14-14.7 28-31.4 41.3-49.9 22.6-2.4 44-6.1 63.6-11 2.3 10.1 4.1 19.8 5.2 29.1zm38.5-66.7c-8.6 3.7-18 7-27.7 10.1-5.7-19.6-13.2-40-22.5-60.9 9.2-20.8 16.6-41.1 22.2-60.6 9.9 3.1 19.3 6.5 28.1 10.2 35.4 15.1 58.3 34.9 58.3 50.6-.1 15.7-23 35.6-58.4 50.6z"
@@ -327,22 +315,14 @@
                     enable-background="new 221.807 89.47 440 621.061"
                   >
                     <filter id="a" width="150%" height="150%" x="-5%" y="-5%">
-                      <feFlood
-                        flood-color="#000"
-                        result="floodFill"
-                        flood-opacity=".5"
-                      />
+                      <feFlood flood-color="#000" result="floodFill" flood-opacity=".5" />
                       <feComposite
                         in="floodFill"
                         in2="SourceAlpha"
                         operator="in"
                         result="coloredAlpha"
                       />
-                      <feGaussianBlur
-                        in="coloredAlpha"
-                        result="blur"
-                        stdDeviation="8"
-                      />
+                      <feGaussianBlur in="coloredAlpha" result="blur" stdDeviation="8" />
                       <feComposite
                         in="blur"
                         in2="SourceGraphic"
@@ -378,11 +358,7 @@
                   </svg>
                 </div>
                 <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 106 28"
-                    focusable="false"
-                  >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106 28" focusable="false">
                     <title>
                       Gatsby
                     </title>
@@ -536,11 +512,7 @@
                   </svg>
                 </div>
                 <div>
-                  <svg
-                    id="Layer_1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 200 300"
-                  >
+                  <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
                     <style type="text/css">
                       .st0 {
                         fill: #0acf83;
@@ -699,10 +671,7 @@
                 </div>
 
                 <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 196.32 170.02"
-                  >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 196.32 170.02">
                     <path
                       fill="#42b883"
                       d="M120.83 0L98.16 39.26 75.49 0H0l98.16 170.02L196.32 0h-75.49z"
@@ -726,23 +695,14 @@
                     <title>next-black</title>
                     <desc>Created with Sketch.</desc>
                     <defs></defs>
-                    <g
-                      id="Page-1"
-                      stroke="none"
-                      stroke-width="1"
-                      fill="none"
-                      fill-rule="evenodd"
-                    >
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                       <g
                         id="Black-Next.js"
                         transform="translate(-247.000000, -138.000000)"
                         fill="#000000"
                         fill-rule="nonzero"
                       >
-                        <g
-                          id="next-black"
-                          transform="translate(247.000000, 138.000000)"
-                        >
+                        <g id="next-black" transform="translate(247.000000, 138.000000)">
                           <g id="EXT-+-Type-something">
                             <path
                               d="M48.9421964,32.6320058 L87.9011585,32.6320058 L87.9011585,35.7136421 L52.5134345,35.7136421 L52.5134345,58.9070103 L85.7908813,58.9070103 L85.7908813,61.9886466 L52.5134345,61.9886466 L52.5134345,87.4526941 L88.306981,87.4526941 L88.306981,90.5343303 L48.9421964,90.5343303 L48.9421964,32.6320058 Z M91.3912326,32.6320058 L95.5306221,32.6320058 L113.8738,58.0960534 L132.622801,32.6320058 L158.124498,0.286809811 L116.22757,60.7722112 L137.817329,90.5343303 L133.51561,90.5343303 L113.8738,63.4483691 L94.1508254,90.5343303 L89.9302715,90.5343303 L111.682358,60.7722112 L91.3912326,32.6320058 Z M139.359455,35.713642 L139.359455,32.6320058 L183.756439,32.6320058 L183.756439,35.7136421 L163.302983,35.7136421 L163.302983,90.5343303 L159.731745,90.5343303 L159.731745,35.7136421 L139.359455,35.713642 Z"
@@ -763,10 +723,7 @@
                   </svg>
                 </div>
                 <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 1052 1052"
-                  >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1052 1052">
                     <path fill="#f0db4f" d="M0 0h1052v1052H0z" />
                     <path
                       d="M965.9 801.1c-7.7-48-39-88.3-131.7-125.9-32.2-14.8-68.1-25.399-78.8-49.8-3.8-14.2-4.3-22.2-1.9-30.8 6.9-27.9 40.2-36.6 66.6-28.6 17 5.7 33.1 18.801 42.8 39.7 45.4-29.399 45.3-29.2 77-49.399-11.6-18-17.8-26.301-25.4-34-27.3-30.5-64.5-46.2-124-45-10.3 1.3-20.699 2.699-31 4-29.699 7.5-58 23.1-74.6 44-49.8 56.5-35.6 155.399 25 196.1 59.7 44.8 147.4 55 158.6 96.9 10.9 51.3-37.699 67.899-86 62-35.6-7.4-55.399-25.5-76.8-58.4-39.399 22.8-39.399 22.8-79.899 46.1 9.6 21 19.699 30.5 35.8 48.7 76.2 77.3 266.899 73.5 301.1-43.5 1.399-4.001 10.6-30.801 3.199-72.101zm-394-317.6h-98.4c0 85-.399 169.4-.399 254.4 0 54.1 2.8 103.7-6 118.9-14.4 29.899-51.7 26.2-68.7 20.399-17.3-8.5-26.1-20.6-36.3-37.699-2.8-4.9-4.9-8.7-5.601-9-26.699 16.3-53.3 32.699-80 49 13.301 27.3 32.9 51 58 66.399 37.5 22.5 87.9 29.4 140.601 17.3 34.3-10 63.899-30.699 79.399-62.199 22.4-41.3 17.6-91.3 17.4-146.6.5-90.2 0-180.4 0-270.9z"
@@ -830,10 +787,7 @@
                   </svg>
                 </div>
                 <div>
-                  <svg
-                    viewBox="175.7 78 490.6 436.9"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+                  <svg viewBox="175.7 78 490.6 436.9" xmlns="http://www.w3.org/2000/svg">
                     <g fill="#61dafb">
                       <path
                         d="m666.3 296.5c0-32.5-40.7-63.3-103.1-82.4 14.4-63.6 8-114.2-20.2-130.4-6.5-3.8-14.1-5.6-22.4-5.6v22.3c4.6 0 8.3.9 11.4 2.6 13.6 7.8 19.5 37.5 14.9 75.7-1.1 9.4-2.9 19.3-5.1 29.4-19.6-4.8-41-8.5-63.5-10.9-13.5-18.5-27.5-35.3-41.6-50 32.6-30.3 63.2-46.9 84-46.9v-22.3c-27.5 0-63.5 19.6-99.9 53.6-36.4-33.8-72.4-53.2-99.9-53.2v22.3c20.7 0 51.4 16.5 84 46.6-14 14.7-28 31.4-41.3 49.9-22.6 2.4-44 6.1-63.6 11-2.3-10-4-19.7-5.2-29-4.7-38.2 1.1-67.9 14.6-75.8 3-1.8 6.9-2.6 11.5-2.6v-22.3c-8.4 0-16 1.8-22.6 5.6-28.1 16.2-34.4 66.7-19.9 130.1-62.2 19.2-102.7 49.9-102.7 82.3 0 32.5 40.7 63.3 103.1 82.4-14.4 63.6-8 114.2 20.2 130.4 6.5 3.8 14.1 5.6 22.5 5.6 27.5 0 63.5-19.6 99.9-53.6 36.4 33.8 72.4 53.2 99.9 53.2 8.4 0 16-1.8 22.6-5.6 28.1-16.2 34.4-66.7 19.9-130.1 62-19.1 102.5-49.9 102.5-82.3zm-130.2-66.7c-3.7 12.9-8.3 26.2-13.5 39.5-4.1-8-8.4-16-13.1-24-4.6-8-9.5-15.8-14.4-23.4 14.2 2.1 27.9 4.7 41 7.9zm-45.8 106.5c-7.8 13.5-15.8 26.3-24.1 38.2-14.9 1.3-30 2-45.2 2-15.1 0-30.2-.7-45-1.9-8.3-11.9-16.4-24.6-24.2-38-7.6-13.1-14.5-26.4-20.8-39.8 6.2-13.4 13.2-26.8 20.7-39.9 7.8-13.5 15.8-26.3 24.1-38.2 14.9-1.3 30-2 45.2-2 15.1 0 30.2.7 45 1.9 8.3 11.9 16.4 24.6 24.2 38 7.6 13.1 14.5 26.4 20.8 39.8-6.3 13.4-13.2 26.8-20.7 39.9zm32.3-13c5.4 13.4 10 26.8 13.8 39.8-13.1 3.2-26.9 5.9-41.2 8 4.9-7.7 9.8-15.6 14.4-23.7 4.6-8 8.9-16.1 13-24.1zm-101.4 106.7c-9.3-9.6-18.6-20.3-27.8-32 9 .4 18.2.7 27.5.7 9.4 0 18.7-.2 27.8-.7-9 11.7-18.3 22.4-27.5 32zm-74.4-58.9c-14.2-2.1-27.9-4.7-41-7.9 3.7-12.9 8.3-26.2 13.5-39.5 4.1 8 8.4 16 13.1 24s9.5 15.8 14.4 23.4zm73.9-208.1c9.3 9.6 18.6 20.3 27.8 32-9-.4-18.2-.7-27.5-.7-9.4 0-18.7.2-27.8.7 9-11.7 18.3-22.4 27.5-32zm-74 58.9c-4.9 7.7-9.8 15.6-14.4 23.7-4.6 8-8.9 16-13 24-5.4-13.4-10-26.8-13.8-39.8 13.1-3.1 26.9-5.8 41.2-7.9zm-90.5 125.2c-35.4-15.1-58.3-34.9-58.3-50.6s22.9-35.6 58.3-50.6c8.6-3.7 18-7 27.7-10.1 5.7 19.6 13.2 40 22.5 60.9-9.2 20.8-16.6 41.1-22.2 60.6-9.9-3.1-19.3-6.5-28-10.2zm53.8 142.9c-13.6-7.8-19.5-37.5-14.9-75.7 1.1-9.4 2.9-19.3 5.1-29.4 19.6 4.8 41 8.5 63.5 10.9 13.5 18.5 27.5 35.3 41.6 50-32.6 30.3-63.2 46.9-84 46.9-4.5-.1-8.3-1-11.3-2.7zm237.2-76.2c4.7 38.2-1.1 67.9-14.6 75.8-3 1.8-6.9 2.6-11.5 2.6-20.7 0-51.4-16.5-84-46.6 14-14.7 28-31.4 41.3-49.9 22.6-2.4 44-6.1 63.6-11 2.3 10.1 4.1 19.8 5.2 29.1zm38.5-66.7c-8.6 3.7-18 7-27.7 10.1-5.7-19.6-13.2-40-22.5-60.9 9.2-20.8 16.6-41.1 22.2-60.6 9.9 3.1 19.3 6.5 28.1 10.2 35.4 15.1 58.3 34.9 58.3 50.6-.1 15.7-23 35.6-58.4 50.6z"
@@ -849,22 +803,14 @@
                     enable-background="new 221.807 89.47 440 621.061"
                   >
                     <filter id="a" width="150%" height="150%" x="-5%" y="-5%">
-                      <feFlood
-                        flood-color="#000"
-                        result="floodFill"
-                        flood-opacity=".5"
-                      />
+                      <feFlood flood-color="#000" result="floodFill" flood-opacity=".5" />
                       <feComposite
                         in="floodFill"
                         in2="SourceAlpha"
                         operator="in"
                         result="coloredAlpha"
                       />
-                      <feGaussianBlur
-                        in="coloredAlpha"
-                        result="blur"
-                        stdDeviation="8"
-                      />
+                      <feGaussianBlur in="coloredAlpha" result="blur" stdDeviation="8" />
                       <feComposite
                         in="blur"
                         in2="SourceGraphic"
@@ -900,11 +846,7 @@
                   </svg>
                 </div>
                 <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 106 28"
-                    focusable="false"
-                  >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106 28" focusable="false">
                     <title>
                       Gatsby
                     </title>
@@ -1058,11 +1000,7 @@
                   </svg>
                 </div>
                 <div>
-                  <svg
-                    id="Layer_1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 200 300"
-                  >
+                  <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
                     <style type="text/css">
                       .st0 {
                         fill: #0acf83;
@@ -1221,10 +1159,7 @@
                 </div>
 
                 <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 196.32 170.02"
-                  >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 196.32 170.02">
                     <path
                       fill="#42b883"
                       d="M120.83 0L98.16 39.26 75.49 0H0l98.16 170.02L196.32 0h-75.49z"
@@ -1248,23 +1183,14 @@
                     <title>next-black</title>
                     <desc>Created with Sketch.</desc>
                     <defs></defs>
-                    <g
-                      id="Page-1"
-                      stroke="none"
-                      stroke-width="1"
-                      fill="none"
-                      fill-rule="evenodd"
-                    >
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                       <g
                         id="Black-Next.js"
                         transform="translate(-247.000000, -138.000000)"
                         fill="#000000"
                         fill-rule="nonzero"
                       >
-                        <g
-                          id="next-black"
-                          transform="translate(247.000000, 138.000000)"
-                        >
+                        <g id="next-black" transform="translate(247.000000, 138.000000)">
                           <g id="EXT-+-Type-something">
                             <path
                               d="M48.9421964,32.6320058 L87.9011585,32.6320058 L87.9011585,35.7136421 L52.5134345,35.7136421 L52.5134345,58.9070103 L85.7908813,58.9070103 L85.7908813,61.9886466 L52.5134345,61.9886466 L52.5134345,87.4526941 L88.306981,87.4526941 L88.306981,90.5343303 L48.9421964,90.5343303 L48.9421964,32.6320058 Z M91.3912326,32.6320058 L95.5306221,32.6320058 L113.8738,58.0960534 L132.622801,32.6320058 L158.124498,0.286809811 L116.22757,60.7722112 L137.817329,90.5343303 L133.51561,90.5343303 L113.8738,63.4483691 L94.1508254,90.5343303 L89.9302715,90.5343303 L111.682358,60.7722112 L91.3912326,32.6320058 Z M139.359455,35.713642 L139.359455,32.6320058 L183.756439,32.6320058 L183.756439,35.7136421 L163.302983,35.7136421 L163.302983,90.5343303 L159.731745,90.5343303 L159.731745,35.7136421 L139.359455,35.713642 Z"
@@ -1285,10 +1211,7 @@
                   </svg>
                 </div>
                 <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 1052 1052"
-                  >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1052 1052">
                     <path fill="#f0db4f" d="M0 0h1052v1052H0z" />
                     <path
                       d="M965.9 801.1c-7.7-48-39-88.3-131.7-125.9-32.2-14.8-68.1-25.399-78.8-49.8-3.8-14.2-4.3-22.2-1.9-30.8 6.9-27.9 40.2-36.6 66.6-28.6 17 5.7 33.1 18.801 42.8 39.7 45.4-29.399 45.3-29.2 77-49.399-11.6-18-17.8-26.301-25.4-34-27.3-30.5-64.5-46.2-124-45-10.3 1.3-20.699 2.699-31 4-29.699 7.5-58 23.1-74.6 44-49.8 56.5-35.6 155.399 25 196.1 59.7 44.8 147.4 55 158.6 96.9 10.9 51.3-37.699 67.899-86 62-35.6-7.4-55.399-25.5-76.8-58.4-39.399 22.8-39.399 22.8-79.899 46.1 9.6 21 19.699 30.5 35.8 48.7 76.2 77.3 266.899 73.5 301.1-43.5 1.399-4.001 10.6-30.801 3.199-72.101zm-394-317.6h-98.4c0 85-.399 169.4-.399 254.4 0 54.1 2.8 103.7-6 118.9-14.4 29.899-51.7 26.2-68.7 20.399-17.3-8.5-26.1-20.6-36.3-37.699-2.8-4.9-4.9-8.7-5.601-9-26.699 16.3-53.3 32.699-80 49 13.301 27.3 32.9 51 58 66.399 37.5 22.5 87.9 29.4 140.601 17.3 34.3-10 63.899-30.699 79.399-62.199 22.4-41.3 17.6-91.3 17.4-146.6.5-90.2 0-180.4 0-270.9z"
@@ -1302,15 +1225,18 @@
         </div>
       </div>
     </section>
-    <section class="our-team-section">
+    <section id="our-team-section">
       <div class="our-team-heading">
-        <h1 class="our-team-header">
+        <h1 
+          class="our-team-header"
+          onmouseenter="changeColor(this)"
+          onmouseleave="resetColor(this)"
+        >
           <span class="our-team-text-blue">Our</span>
           <span class="our-team-blue-hover">Team</span>
         </h1>
         <p class="our-team-sub-header">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit Natus maiores
-          vitae asperiores.<br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit Natus maiores vitae asperiores.<br />
           nulla blanditiis voluptatum illum.
         </p>
       </div>
@@ -1333,19 +1259,14 @@
             <h3>BRAHIMI <span style="color: #18a0fb;">Sid Ahmed</span></h3>
             <div class="profession">Full Stack Web Developer</div>
             <p class="card-paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Recusandae minus voluptatum doloremque perspiciatis aperiam id
-              voluptates.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae minus voluptatum
+              doloremque perspiciatis aperiam id voluptates.
             </p>
             <div class="social-links">
               <a href="https://facebook.com/sidou010" class="icon-fb">
                 <i class="fab fa-facebook icon-fb"></i>
               </a>
-              <a
-                style="margin-left: 1.5rem;"
-                class="icon-git"
-                href="https://github.com/sidou01"
-              >
+              <a style="margin-left: 1.5rem;" class="icon-git" href="https://github.com/sidou01">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 17 16"
@@ -1374,7 +1295,7 @@
                 </svg>
               </a>
               <a
-                style="margin-left:1.5rem; font-size: 1.8rem;margin-top: -2px"
+                style="margin-left: 1.5rem; font-size: 1.8rem; margin-top: -2px;"
                 class="icon-git"
                 href=""
               >
@@ -1390,27 +1311,22 @@
             <h3>HABRI <span style="color: #18a0fb;">Sofiane</span></h3>
             <div class="profession">Graphic Designer</div>
             <p class="card-paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Recusandae minus voluptatum doloremque perspiciatis aperiam id
-              voluptates.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae minus voluptatum
+              doloremque perspiciatis aperiam id voluptates.
             </p>
             <div class="social-links">
-              <a
-                style="margin-left: 0;"
-                href="https://facebook.com/aehabri"
-                class="icon-fb"
-              >
+              <a style="margin-left: 0;" href="https://facebook.com/aehabri" class="icon-fb">
                 <i class="fab fa-facebook icon-fb"></i>
               </a>
               <a
-                style="margin-left:1.5rem; font-size: 1.8rem;margin-top: -2px"
+                style="margin-left: 1.5rem; font-size: 1.8rem; margin-top: -2px;"
                 class="icon-git"
                 href=""
               >
                 <i class="fab fa-behance-square"></i>
               </a>
               <a
-                style="margin-left:1.5rem; font-size: 1.8rem;margin-top: -2px"
+                style="margin-left: 1.5rem; font-size: 1.8rem; margin-top: -2px;"
                 class="icon-git"
                 href=""
               >
@@ -1429,7 +1345,7 @@
         </div>
       </div>
     </section>
-    <footer>
+    <footer id="footer">
       <img
         src="https://res.cloudinary.com/dxm0sdgpv/image/upload/v1593129880/orandevsolutions/footer-right-side_afrpvb.png"
       />
@@ -1464,9 +1380,7 @@
         </div>
 
         <div class="right-most-container">
-          <button
-            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-          >
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
             Get in Touch
           </button>
           <div class="socials"></div>
