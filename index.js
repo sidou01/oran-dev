@@ -19,7 +19,7 @@ function resetColor(el) {
 
 const options = {
   strings: [
-    '<span class="cta-text-blue">Oran</span> <span class="cta-primary-header-color2">Dev <span class="cta-primary-header-color3">Solutions</span>',
+    '<span class="cta-text-blue">Oran</span> <span class="cta-primary-header-color2"> Dev <span class="cta-primary-header-color3">Solutions</span>',
     'Development <span class="cta-text-blue">Web</span>',
     'Developement <span class="cta-primary-header-color2">Mobile</span>',
     'Design et <span class="cta-primary-header-color3">Prototyping</span>',

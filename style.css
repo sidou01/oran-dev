@@ -28,7 +28,6 @@ h3 {
 .top-header {
   display: flex;
   justify-content: space-between;
-  color: #18a0fb;
 }
 
 .top-header-img {
@@ -63,7 +62,6 @@ h3 {
   margin-right: 1.5rem;
   color: #18a0fb;
 }
-
 a {
   text-decoration: none;
 }
@@ -81,6 +79,111 @@ a {
 .nav-link:hover:after {
   background-color: #18a0fb;
   width: 100%;
+}
+
+.toggler {
+  display: none;
+}
+
+/*  */
+
+@media only screen and (max-width: 1020px) {
+  .navigation {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.5s ease;
+  }
+  .toggler {
+    display: flex; /* to not have display none */
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+  }
+
+  .hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+
+  .hamburger > div {
+    position: relative;
+    height: 3px;
+    flex: none;
+    background-color: #156fd7;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+
+  .hamburger > div::before,
+  .hamburger > div::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    height: 3px;
+    width: 100%;
+    background-color: inherit;
+  }
+
+  .hamburger > div::after {
+    top: 10px;
+  }
+
+  .toggler:checked + .hamburger {
+    background-color: #0c5cd0;
+  }
+
+  .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+  }
+
+  .toggler:checked + .hamburger > div:before,
+  .toggler:checked + .hamburger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  .toggler:checked ~ .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* overflow-y: scroll;
+    overflow-x: visible; */
+  }
+  .toggler:checked ~ .navigation ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .toggler:checked + .hamburger {
+    background: #fff;
+  }
+  .nav-link {
+    color: #fff;
+    border-bottom: 0.5px solid #fff;
+    margin: 0;
+    margin-top: 2rem;
+  }
+  .nav-link:hover {
+    color: #0c5cd0;
+    border-bottom: 1px solid #0c5cd0;
+  }
 }
 
 #main-section {
@@ -116,7 +219,7 @@ a {
 
 @media only screen and (max-width: 640px) {
   .cta-secondary-header {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 500;
   }
 }
@@ -299,10 +402,45 @@ h1 {
   flex-direction: column;
 }
 
-.service-tags {
+.services-tags {
   margin-left: -5%;
   width: 55%;
-  display: inline-block;
+}
+
+.service-left-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+}
+
+.services-button {
+  width: 130px;
+  margin-left: 70%;
+  margin-top: -8%;
+}
+
+.services-button:hover {
+  background-color: #0c5cd0;
+  border-color: #0c5cd0;
+}
+
+@media only screen and (max-width: 1020px) {
+  .service-left {
+    margin-left: 1.5rem;
+    width: 88%;
+  }
+  .services-tags {
+    margin-left: -7%;
+    width: 100%;
+  }
+  .services-button {
+    width: 100%;
+    margin: 0;
+  }
+  /* .services-button { */
+  /*   margin-left: 0%; */
+  /* } */
 }
 
 .design-service-grey-bg {
@@ -338,25 +476,12 @@ h1 {
 }
 
 .web-service-img {
-  margin-right: 2rem;
   height: 380px;
-  margin-top: 2rem;
 }
 
 .design-service-img {
   height: 475px;
   margin-top: 4rem;
-}
-
-.services-button {
-  width: 130px;
-  margin-left: 70%;
-  margin-top: -8%;
-}
-
-.services-button:hover {
-  background-color: #0c5cd0;
-  border-color: #0c5cd0;
 }
 
 #tech-stack-section {
@@ -627,4 +752,70 @@ footer .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+/* Tablets */
+@media only screen and (max-width: 1020px) {
+}
+
+/* Phones */
+
+@media only screen and (max-width: 640px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
+  }
+  .service-header {
+    font-size: 2rem;
+  }
+
+  img[class$='service-img'] {
+    height: 100%;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .design-service-side-img {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    z-index: -1;
+    width: 80px;
+    top: -4.5rem;
+  }
+  .design-service-grey-bg {
+    position: absolute;
+    width: 78%;
+    bottom: -3%;
+    z-index: -1;
+    right: 0;
+  }
+  #tech-stack-section .left-img {
+    display: none;
+  }
+
+  .our-team-cards .container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-inactive {
+    display: none;
+  }
+  .card {
+    width: 80%;
+    margin: 0;
+    margin-top: 1.5rem;
+  }
+
+  footer img {
+    height: 12rem;
+  }
 }
