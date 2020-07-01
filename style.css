@@ -158,19 +158,19 @@ a {
     transform: rotate(90deg);
   }
 
-  .toggler:checked ~ .navigation {
-    position: fixed;
-    top: 0;
-    left: 0;
-    /* overflow-y: scroll;
-    overflow-x: visible; */
-  }
-  .toggler:checked ~ .navigation ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+  /* .toggler:checked ~ .navigation { */
+  /*   position: fixed; */
+  /*   top: 0; */
+  /*   left: 0; */
+  /*   /1* overflow-y: scroll; */
+  /*   overflow-x: visible; *1/ */
+  /* } */
+  /* .toggler:checked ~ .navigation ul { */
+  /*   display: flex; */
+  /*   flex-direction: column; */
+  /*   justify-content: center; */
+  /*   align-items: center; */
+  /* } */
   .toggler:checked + .hamburger {
     background: #fff;
   }
