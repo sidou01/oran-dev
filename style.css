@@ -588,6 +588,7 @@ h1 {
   padding-top: 2rem;
   padding-bottom: 2rem;
   display: flex;
+  justify-content: center;
 }
 
 .card {
@@ -707,7 +708,7 @@ footer {
   position: relative;
 }
 
-footer img {
+footer .right-side-bg {
   right: 0;
   bottom: 100%;
   position: absolute;
@@ -815,7 +816,46 @@ footer .container {
     margin-top: 1.5rem;
   }
 
-  footer img {
+  footer .right-side-bg {
     height: 12rem;
   }
+}
+
+.footer-social-links {
+  display: flex;
+  position: absolute;
+  right: 2rem;
+  bottom: 25px;
+  justify-content: space-between;
+  width: 125px;
+}
+
+.footer-social-links a:hover svg {
+  background-color: #156fd7;
+}
+
+.footer-social-links img {
+  height: 35px;
+  width: 35px;
+}
+
+.footer-left-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-left-wrapper p {
+  font-size: 17px;
+}
+
+.footer-contact-info {
+  display: flex;
+  align-items: center;
+}
+
+.footer-contact-info i {
+  margin-right: 1rem;
+  font-size: 18px;
+  color: #18a0fb;
 }
