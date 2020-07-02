@@ -189,6 +189,7 @@ a {
 #main-section {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 }
 .cta-section {
   margin-left: 2.5rem;
