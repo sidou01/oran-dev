@@ -839,6 +839,13 @@ footer .container {
     display: none;
   }
 
+  .web-service-img,
+  .design-service-img,
+  .design-service-grey-bg
+   {
+      display: none;
+  }
+
   .our-team-cards .container {
     padding-top: 2rem;
     padding-bottom: 2rem;
