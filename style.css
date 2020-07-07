@@ -294,7 +294,6 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-;
 }
 
 .tech-stack-sub-header {
@@ -813,6 +812,11 @@ footer .container {
     font-size: 2rem;
   }
 
+  .tech-stack-header,
+  .our-team-header {
+    font-size: 1.8rem;
+  }
+
   img[class$='service-img'] {
     height: 100%;
     width: 100%;
@@ -841,9 +845,8 @@ footer .container {
 
   .web-service-img,
   .design-service-img,
-  .design-service-grey-bg
-   {
-      display: none;
+  .design-service-grey-bg {
+    display: none;
   }
 
   .our-team-cards .container {
