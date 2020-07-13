@@ -256,12 +256,12 @@ a {
 #main-section {
   display: flex;
   justify-content: space-between;
-  margin-top: 150px;
+  margin-top: 115px;
   color: #fff;
 }
 .cta-section {
   margin-left: 2.5rem;
-  margin-top: 1rem;
+  margin-top: 3rem;
   /* width: 49%; */
 }
 
