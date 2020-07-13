@@ -17,13 +17,31 @@ function resetColor(el) {
   secondNode.style.color = 'black';
 }
 
+function burgerClicked() {
+  const checkbox = document.querySelector('.toggler');
+  const header = document.querySelector('.top-header');
+  const body = document.querySelector('body');
+  const navElements = document.getElementsByClassName('nav-link');
+
+  // if (checkbox.checked) {
+  //   body.style.position = 'fixed';
+  // } else {
+  //   body.style.position = static;
+  // }
+
+  for (let i = 0; i < navElements.length; i++) {
+    navElements[i].addEventListener('click', () => {
+      checkbox.checked = false;
+    });
+  }
+}
+
 const options = {
   strings: [
-    '<span class="cta-text-blue">Oran</span> <span class="cta-primary-header-color2"> Dev <span class="cta-primary-header-color3">Solutions</span>',
-    'Development <span class="cta-text-blue">Web</span>',
-    'Developement <span class="cta-primary-header-color2">Mobile</span>',
-    'Design et <span class="cta-primary-header-color3">Prototyping</span>',
-    '<span class="cta-text-blue">Oran</span> <span class="cta-primary-header-color2">Dev <span class="cta-primary-header-color3">Solutions</span>',
+    'Development Web',
+    'Development Mobile',
+    'Design and Prototyping',
+    'An amazing experience with an amazing team',
   ],
   typeSpeed: 80,
   showCursor: false,
