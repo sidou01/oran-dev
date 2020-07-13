@@ -22,6 +22,7 @@ function burgerClicked() {
   const header = document.querySelector('.top-header');
   const body = document.querySelector('body');
   const navElements = document.getElementsByClassName('nav-link');
+  const nav = document.getElementsByClassName('navigation');
 
   // if (checkbox.checked) {
   //   body.style.position = 'fixed';
@@ -34,6 +35,7 @@ function burgerClicked() {
       checkbox.checked = false;
     });
   }
+  /* animation */
 }
 
 const options = {

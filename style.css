@@ -146,12 +146,30 @@ a {
     display: none;
     height: 100vh;
     width: 100vw;
-    /* background-color: #35b0e4; */
     position: absolute;
     top: 60px;
-    transform: translateY(-100%);
-    transition: transform 0.5s linear;
+    /* transform: translateY(-100%); */
     background: #15215b;
+  }
+
+  .slide-in {
+    animation: slide-in 0.5s forwards;
+  }
+  .slide-out {
+    animation: slide-out 0.5s forwards;
+  }
+  @keyframes slide-in {
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  @keyframes slide-out {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
   }
   .toggler {
     display: flex; /* to not have display none */
@@ -230,7 +248,7 @@ a {
   } */
   .toggler:checked ~ .navigation {
     display: block;
-    transform: translateY(0%);
+    /* transform: translateY(0%); */
   }
   .toggler:checked ~ .navigation ul {
     display: flex;
@@ -273,6 +291,7 @@ a {
 .cta-secondary-header {
   font-size: 1.5rem;
   font-weight: 300;
+  margin-bottom: 2rem;
 }
 
 @media only screen and (max-width: 640px) {
@@ -404,7 +423,11 @@ h1 {
 }
 
 .tech-stack-header:hover:after {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0) 40%, rgba(24, 160, 251, 1) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 40%,
+    rgba(24, 160, 251, 1) 100%
+  );
   width: -20%;
 }
 
@@ -443,7 +466,11 @@ h1 {
 }
 
 .our-team-header:hover:after {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0) 40%, rgba(24, 160, 251, 1) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 40%,
+    rgba(24, 160, 251, 1) 100%
+  );
   width: -20%;
 }
 
@@ -597,7 +624,11 @@ h1 {
 }
 
 .services-main-header:hover:after {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0) 40%, rgba(24, 160, 251, 1) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 40%,
+    rgba(24, 160, 251, 1) 100%
+  );
   width: -20%;
 }
 
