@@ -103,7 +103,6 @@ a {
 }
 
 .nav-link:hover:after {
-  /* background-color: #18a0fb; */
   background-color: #fff;
   width: 100%;
 }
@@ -148,7 +147,6 @@ a {
     width: 100vw;
     position: absolute;
     top: 60px;
-    /* transform: translateY(-100%); */
     background: #15215b;
   }
 
@@ -194,8 +192,7 @@ a {
     align-items: center;
     justify-content: center;
     z-index: 1;
-    /* background: #15215b; */
-    background-color: #18a0fb;
+    background: #15215b;
   }
 
   .hamburger > div {
@@ -222,10 +219,6 @@ a {
 
   .hamburger > div::after {
     top: 10px;
-  }
-
-  .toggler:checked + .hamburger {
-    background-color: #18a0fb;
   }
 
   .toggler:checked + .hamburger > div {
