@@ -593,14 +593,14 @@ h1 {
 
 .services-main-header {
   text-align: center;
-  width: 300px;
+  width: 250px;
   cursor: pointer;
 }
 
 @media only screen and (max-width: 640px) {
   .services-main-header {
     text-align: center;
-    width: 205px;
+    width: 175px;
     cursor: pointer;
     font-size: 1.8rem;
   }
