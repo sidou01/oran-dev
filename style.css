@@ -62,7 +62,7 @@ h3 {
     left: 45%;
   }
   .mouse {
-    width: 15px;
+    width: 16px;
     border: 1.5px solid #18a0fb;
     height: 28px;
     padding: 5px;
@@ -72,13 +72,13 @@ h3 {
     margin: auto;
   }
   .mouse-scroll {
-    height: 11px;
-    width: 7px;
+    height: 10px;
+    width: 8px;
     border: 1.5px solid #18a0fb;
-    border-radius: 10px;
+    border-radius: 20px;
     position: absolute;
     bottom: 3px;
-    left: 2px;
+    left: 3px;
   }
   @keyframes scroll {
     from {
