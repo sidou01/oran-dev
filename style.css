@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Nunito Sans', sans-serif;
 }
@@ -49,6 +53,42 @@ h3 {
 .header-bg,
 .menu-bottom-mobile-only {
   display: none;
+}
+
+@media only screen and (min-width: 1021px) {
+  .mouse-wrapper {
+    position: absolute;
+    bottom: 3%;
+    left: 45%;
+  }
+  .mouse {
+    width: 15px;
+    border: 1.5px solid #18a0fb;
+    height: 28px;
+    padding: 5px;
+    border-radius: 10px;
+    background: border-box;
+    position: relative;
+    margin: auto;
+  }
+  .mouse-scroll {
+    height: 11px;
+    width: 7px;
+    border: 1.5px solid #18a0fb;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 3px;
+    left: 2px;
+  }
+  @keyframes scroll {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(15px);
+      opacity: 0;
+    }
+  }
 }
 
 /* phones */
@@ -269,6 +309,7 @@ a {
   justify-content: space-between;
   margin-top: 115px;
   color: #fff;
+  position: relative;
 }
 .cta-section {
   margin-left: 2.5rem;
