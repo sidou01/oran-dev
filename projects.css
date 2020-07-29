@@ -537,7 +537,7 @@ h3 {
   .project {
     display: flex;
     justify-content: space-around;
-    margin-top: 6.5rem;
+    margin-top: 7rem;
     position: relative;
   }
 
@@ -602,6 +602,7 @@ h3 {
     background: url("https://res.cloudinary.com/dxm0sdgpv/image/upload/v1592851309/footer-bg_b1smi8.png");
     color: #fff;
     position: relative;
+    margin-top: 9rem;
   }
 
   footer .right-side-bg {
