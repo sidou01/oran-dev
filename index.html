@@ -42,9 +42,9 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag('js', new Date());
+      gtag("js", new Date());
 
-      gtag('config', 'UA-172724313-1');
+      gtag("config", "UA-172724313-1");
 	</script>
 </head>
 
@@ -52,29 +52,33 @@
 	<!-- Load Facebook SDK for JavaScript -->
 	<div id="fb-root"></div>
 	<script>
-		window.fbAsyncInit = function() {
+		window.fbAsyncInit = function () {
         FB.init({
           xfbml: true,
-          version: 'v7.0',
+          version: "v7.0",
         });
       };
 
-      (function(d, s, id) {
+      (function (d, s, id) {
         var js,
           fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
         js = d.createElement(s);
         js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
         fjs.parentNode.insertBefore(js, fjs);
-      })(document, 'script', 'facebook-jssdk');
+      })(document, "script", "facebook-jssdk");
 	</script>
 
 	<!-- Your Chat Plugin code -->
 	<div class="fb-customerchat" attribution="setup_tool" page_id="100273145059311" theme_color="#18a0fb"></div>
 	<img class="header-bg" src="images/header-bg.png" />
 	<header class="top-header">
-		<img class="top-header-img" src="images/projects/logo.png" alt="Oran Dev Solutions">
+		<img
+        class="top-header-img"
+        src="images/projects/logo.png"
+        alt="Oran Dev Solutions"
+      />
 		<input type="checkbox" class="toggler" onclick="burgerClicked()" />
 		<div class="hamburger">
 			<div></div>
@@ -134,7 +138,7 @@
 			</div>
 		</nav>
 	</header>
-	<div class="mouse-wrapper" style="width:100px">
+	<div class="mouse-wrapper" style="width: 100px;">
 		<a href="#services-section">
 			<div class="mouse">
 				<div class="mouse-scroll"></div>
@@ -195,11 +199,11 @@
                 class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-700"
                 >Java</span>
 						</div>
-						<!-- <button -->
-						<!--   class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded services-button" -->
-						<!-- > -->
-						<!--   Afficher Plus -->
-						<!-- </button> -->
+						<a href="https://www.behance.net/gallery/100909337/Car-rental-application"
+							class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded services-button">
+
+							Show Projects
+						</a>
 					</div>
 				</div>
 				<img
@@ -209,7 +213,7 @@
         />
       </div>
 
-				<div class="service" style="background-color: #f8f8f8; z-index: -1; margin-top: 2rem;">
+				<div class="service" style="background-color: #f8f8f8; margin-top: 2rem;">
 					<img
           class="web-service-img"
           src="https://res.cloudinary.com/dxm0sdgpv/image/upload/v1592852216/web-service_s6uudd.png"
@@ -241,11 +245,12 @@
                 class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-700"
                 >PHP</span>
 							</div>
-							<!-- <button -->
-							<!--   class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded services-button" -->
-							<!-- > -->
-							<!--   Afficher Plus -->
-							<!-- </button> -->
+							<a href="https://www.behance.net/gallery/100683161/e-learning-index-website"
+								class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded services-button">
+
+								Show Projects
+							</a>
+
 						</div>
 					</div>
 				</div>
@@ -283,11 +288,12 @@
               class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-700"
               >Web Design</span>
 						</div>
-						<!-- <button -->
-						<!--   class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded services-button" -->
-						<!-- > -->
-						<!--   Afficher Plus -->
-						<!-- </button> -->
+						<a href="https://www.behance.net/gallery/101516923/Library-index-website"
+							class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded services-button"
+							-->
+
+							Show Projects
+						</a>
 					</div>
 					<img
           class="design-service-img"
@@ -1059,8 +1065,11 @@
 									</defs>
 								</svg>
 							</a>
-							<a style="margin-left: 1.5rem; font-size: 1.8rem; margin-top: -2px;" class="icon-git"
-								href="https://api.whatsapp.com/send?phone=213540233312">
+							<a style="
+                  margin-left: 1.5rem;
+                  font-size: 1.8rem;
+                  margin-top: -2px;
+                " class="icon-git" href="https://api.whatsapp.com/send?phone=213540233312">
 								<i class="fab fa-whatsapp"></i>
 							</a>
 						</div>
@@ -1082,12 +1091,18 @@
 							<a style="margin-left: 0;" href="https://facebook.com/aehabri" class="icon-fb">
 								<i class="fab fa-facebook icon-fb"></i>
 							</a>
-							<a style="margin-left: 1.5rem; font-size: 1.8rem; margin-top: -2px;" class="icon-git"
-								href="http://www.behance.net/sofianehabri">
+							<a style="
+                  margin-left: 1.5rem;
+                  font-size: 1.8rem;
+                  margin-top: -2px;
+                " class="icon-git" href="http://www.behance.net/sofianehabri">
 								<i class="fab fa-behance-square"></i>
 							</a>
-							<a style="margin-left: 1.5rem; font-size: 1.8rem; margin-top: -2px;" class="icon-git"
-								href="https://api.whatsapp.com/send?phone=213657081925">
+							<a style="
+                  margin-left: 1.5rem;
+                  font-size: 1.8rem;
+                  margin-top: -2px;
+                " class="icon-git" href="https://api.whatsapp.com/send?phone=213657081925">
 								<i class="fab fa-whatsapp"></i>
 							</a>
 						</div>
