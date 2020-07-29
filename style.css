@@ -54,6 +54,12 @@ h3 {
 }
 
 @media only screen and (min-width: 1021px) {
+  .navigation ul {
+      display: flex;
+    list-style-type: none;
+    margin-right: 2rem;
+    margin-top: 1rem;
+  }
   .top-header-img {
     display: none;
   }
@@ -555,6 +561,8 @@ h1 {
   width: 140px;
   margin-left: 70%;
   margin-top: -8%;
+  display: flex;
+  justify-content: center;
 }
 
 .services-button:hover {
