@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 
 @font-face {
-  src: url('~/Documents/font/AquireBold-8Ma60.otf'), format('opentype');
+  src: url("~/Documents/font/AquireBold-8Ma60.otf"), format("opentype");
 }
 
 * {
@@ -16,15 +16,15 @@ html {
 }
 
 body {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
 header h1 {
-  font-family: 'Aquire', sans-serif;
+  font-family: "Aquire", sans-serif;
 }
 
 h2 {
@@ -42,12 +42,10 @@ h3 {
 }
 
 .top-header-img {
-  width: 170px;
-  height: 60px;
+  display: block;
   position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
+  top: 10px;
+  width: 250px;
 }
 
 .header-bg,
@@ -56,6 +54,9 @@ h3 {
 }
 
 @media only screen and (min-width: 1021px) {
+  .top-header-img {
+    display: none;
+  }
   .mouse-wrapper {
     position: absolute;
     bottom: 3%;
@@ -137,7 +138,7 @@ a {
 
 .nav-link:after {
   display: block;
-  content: '';
+  content: "";
   height: 2px;
   width: 0;
   margin: auto;
@@ -158,7 +159,7 @@ a {
 
 @media only screen and (max-width: 1020px) {
   .top-header {
-    background: #15215b;
+    background: #292f4f;
   }
   .menu-bottom-mobile-only {
     display: flex;
@@ -184,13 +185,13 @@ a {
   }
   .navigation {
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     display: none;
     height: 100vh;
     width: 100vw;
     position: absolute;
     top: 60px;
-    background: #15215b;
+    background: #292f4f;
   }
 
   .slide-in {
@@ -235,7 +236,6 @@ a {
     align-items: center;
     justify-content: center;
     z-index: 1;
-    background: #15215b;
   }
 
   .hamburger > div {
@@ -252,7 +252,7 @@ a {
 
   .hamburger > div::before,
   .hamburger > div::after {
-    content: '';
+    content: "";
     position: absolute;
     top: -10px;
     height: 3px;
@@ -451,7 +451,7 @@ h1 {
 
 .tech-stack-header:after {
   display: block;
-  content: '';
+  content: "";
   height: 2px;
   width: 95%;
   margin: auto;
@@ -494,7 +494,7 @@ h1 {
 
 .our-team-header:after {
   display: block;
-  content: '';
+  content: "";
   height: 2px;
   width: 95%;
   margin: auto;
@@ -608,7 +608,7 @@ h1 {
 }
 
 .design-service {
-  background: url('https://res.cloudinary.com/dxm0sdgpv/image/upload/v1592944247/orandevsolutions/grey-bg_sgl9mn.png');
+  background: url("https://res.cloudinary.com/dxm0sdgpv/image/upload/v1592944247/orandevsolutions/grey-bg_sgl9mn.png");
 }
 
 .mobile-service-img {
@@ -652,7 +652,7 @@ h1 {
 
 .services-main-header:after {
   display: block;
-  content: '';
+  content: "";
   height: 2px;
   width: 95%;
   margin: auto;
@@ -741,7 +741,7 @@ h1 {
   align-items: center;
   justify-content: center;
   transition: 0.3s;
-  background: url('https://res.cloudinary.com/dxm0sdgpv/image/upload/v1592851309/footer-bg_b1smi8.png');
+  background: url("https://res.cloudinary.com/dxm0sdgpv/image/upload/v1592851309/footer-bg_b1smi8.png");
   box-shadow: 0 0 10px -5px #333;
   border-radius: 3px;
   opacity: 0.3;
@@ -794,7 +794,7 @@ h1 {
   align-items: center;
   justify-content: center;
   transition: 0.3s;
-  background: url('https://res.cloudinary.com/dxm0sdgpv/image/upload/v1592851309/footer-bg_b1smi8.png');
+  background: url("https://res.cloudinary.com/dxm0sdgpv/image/upload/v1592851309/footer-bg_b1smi8.png");
   color: #fff;
   box-shadow: 0 0 25px -5px #333;
   border-radius: 3px;
@@ -843,7 +843,7 @@ h1 {
 }
 
 footer {
-  background: url('https://res.cloudinary.com/dxm0sdgpv/image/upload/v1592851309/footer-bg_b1smi8.png');
+  background: url("https://res.cloudinary.com/dxm0sdgpv/image/upload/v1592851309/footer-bg_b1smi8.png");
   color: #fff;
   position: relative;
 }
@@ -957,7 +957,7 @@ footer .container {
     font-size: 1.8rem;
   }
 
-  img[class$='service-img'] {
+  img[class$="service-img"] {
     height: 100%;
     width: 100%;
     padding-top: 1rem;
