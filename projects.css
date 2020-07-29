@@ -527,10 +527,10 @@ h3 {
     width: 83%;
   }
   .projects__img {
-    width: 660px;
+    width: 735px;
     height: 460px;
     margin-top: -4em;
-    margin-right: 2rem;
+    margin-right: 1rem;
     z-index: 1;
   }
 
@@ -701,7 +701,7 @@ h3 {
   }
 
   .car-rent-section button {
-    padding: 0.5rem 1.8rem;
+    padding: 7px 29px;
     z-index: 1;
   }
 }
